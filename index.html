@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM – Cost / Benifit Calculator</title>
+
+  <link rel="stylesheet" href="./normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./scripts.js"></script>
+</head>
+<body>
+  <h1>Cost / Benifit Calculator</h1>
+  <p>A simple calculator for determining the feasibility score of a feature or enhancement. This pointing rubric is meant to serve as a guide. We must still practice critical thinking and common sense project management, of course.</p>
+
+  <h2>Benifits</h2>
+
+  <label>Customer Value</label>
+  <p>How much does this benefit the user directly? Are user's requesting the feature, has data shown it will improve their experience?</p>
+  <div class="rubric-list">
+    <p><strong>1:</strong> Little to no value, likely makes our lives easier rather than the user's.</p>
+    <p><strong>5:</strong> A welcomed and appreciated feature, not necessarily required.</p>
+    <p><strong>10:</strong> Absolutely critical to the value proposition. Wouldn’t use the product without it.</p>
+  </div>
+  <div class="btn-group">
+    <button data-group="cv" data-value="1">1</button>
+    <button data-group="cv" data-value="2">2</button>
+    <button data-group="cv" data-value="3">3</button>
+    <button data-group="cv" data-value="4">4</button>
+    <button data-group="cv" data-value="5">5</button>
+    <button data-group="cv" data-value="6">6</button>
+    <button data-group="cv" data-value="7">7</button>
+    <button data-group="cv" data-value="8">8</button>
+    <button data-group="cv" data-value="9">9</button>
+    <button data-group="cv" data-value="10">10</button>
+  </div>
+
+  <label>Is this a Cloud feature or does it directly generate revenue?</label>
+  <div class="btn-group">
+    <button data-group="cf" data-value="1">Yes</button>
+    <button data-group="cf" data-value="0">No</button>
+  </div>
+
+  <label>Strategic / Competitive Value</label>
+  <div class="btn-group">
+    <button data-group="scv" data-value="1">1</button>
+    <button data-group="scv" data-value="2">2</button>
+    <button data-group="scv" data-value="3">3</button>
+    <button data-group="scv" data-value="4">4</button>
+    <button data-group="scv" data-value="5">5</button>
+    <button data-group="scv" data-value="6">6</button>
+    <button data-group="scv" data-value="7">7</button>
+    <button data-group="scv" data-value="8">8</button>
+    <button data-group="scv" data-value="9">9</button>
+    <button data-group="scv" data-value="10">10</button>
+  </div>
+
+  <h2>Costs</h2>
+
+  <label>Implementation Effort</label>
+  <div class="rubric-list">
+    <p><strong>1:</strong> trivial. Could go in a patch release.</p>
+    <p><strong>5:</strong> Requires a decent amount of time, would go in a minor release.</p>
+    <p><strong>10:</strong> Requires major underlying restructuring or refactor, would result in a major version bump.</p>
+  </div>
+  <div class="btn-group">
+    <button data-group="ie" data-value="1">1</button>
+    <button data-group="ie" data-value="2">2</button>
+    <button data-group="ie" data-value="3">3</button>
+    <button data-group="ie" data-value="4">4</button>
+    <button data-group="ie" data-value="5">5</button>
+    <button data-group="ie" data-value="6">6</button>
+    <button data-group="ie" data-value="7">7</button>
+    <button data-group="ie" data-value="8">8</button>
+    <button data-group="ie" data-value="9">9</button>
+    <button data-group="ie" data-value="10">10</button>
+  </div>
+
+  <h2>Feasibility Score: <strong class="feasibilityScore">0</strong></h2>
+</body>
+</html>

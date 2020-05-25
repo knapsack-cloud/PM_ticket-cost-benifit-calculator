@@ -1,0 +1,67 @@
+html,
+body {
+  font-size: 18px;
+}
+
+body {
+  background-color: #29313c;
+  color: #DDE0E3;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+
+button {
+  background-color: #a8bff7;
+  color: #29313c;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  background-color: #809fee;
+}
+button.active {
+  background-color: #50d57e;
+  cursor: default;
+  pointer-events: none;
+}
+
+.rubric-list {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.rubric-list p {
+  margin: 0;
+}
+.rubric-list p + p {
+  margin-top: 0.25em;
+}
+
+.btn-group {
+  
+}
